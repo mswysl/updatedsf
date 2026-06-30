@@ -288,6 +288,7 @@ function ProductCard({
     "aria-label": "Add to wishlist",
     onClick: e => {
       e.preventDefault();
+      e.stopPropagation();
       onWishlist && onWishlist();
     }
   }, /*#__PURE__*/React.createElement(Heart, null)), image ? /*#__PURE__*/React.createElement("img", {
@@ -317,6 +318,7 @@ function ProductCard({
     className: "ms-pcard__cta",
     onClick: e => {
       e.preventDefault();
+      e.stopPropagation();
       onAddToCart && onAddToCart();
     }
   }, /*#__PURE__*/React.createElement(Bag, null), " Add") : null)));

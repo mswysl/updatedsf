@@ -80,7 +80,7 @@ export function ProductCard({
           </div>
         ) : null}
         <button type="button" className="ms-pcard__wish" aria-label="Add to wishlist"
-          onClick={(e) => { e.preventDefault(); onWishlist && onWishlist(); }}><Heart /></button>
+          onClick={(e) => { e.preventDefault(); e.stopPropagation(); onWishlist && onWishlist(); }}><Heart /></button>
         {image ? <img src={image} alt={title} /> : null}
         {soldOut ? <div className="ms-pcard__stamp"><span>Sold out</span></div> : null}
       </div>
@@ -92,7 +92,7 @@ export function ProductCard({
           <Price amount={price} compareAt={compareAt} currency={currency} size="md" />
           {!soldOut ? (
             <button type="button" className="ms-pcard__cta"
-              onClick={(e) => { e.preventDefault(); onAddToCart && onAddToCart(); }}>
+              onClick={(e) => { e.preventDefault(); e.stopPropagation(); onAddToCart && onAddToCart(); }}>
               <Bag /> Add
             </button>
           ) : null}

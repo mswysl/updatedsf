@@ -1,11 +1,10 @@
 /* ============================================================
    MSWYSL — Webfonts
-   Display face: Incised 901 Nord Italic (the real brand logotype
-   font, licensed file shipped in assets/fonts/). Body = Archivo,
-   labels/SKUs = Space Mono (Google Fonts).
+   Display: Incised 901 Nord Italic (licensed file in assets/fonts/).
+   Body: Archivo · Labels/SKUs: Space Mono (self-hosted woff2).
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Incised 901 Nord Italic — brand display face */
 @font-face {
   font-family: 'Incised 901 Nord';
   src: url('../assets/fonts/Incised901NordItalic.ttf') format('truetype');
@@ -13,3 +12,19 @@
   font-style: italic;
   font-display: swap;
 }
+
+/* Archivo — body & UI */
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-400-normal.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-400-italic.woff2') format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-500-normal.woff2') format('woff2'); font-weight:500; font-style:normal; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-500-italic.woff2') format('woff2'); font-weight:500; font-style:italic; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-600-normal.woff2') format('woff2'); font-weight:600; font-style:normal; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-600-italic.woff2') format('woff2'); font-weight:600; font-style:italic; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-700-normal.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Archivo'; src:url('../assets/fonts/archivo/archivo-latin-700-italic.woff2') format('woff2'); font-weight:700; font-style:italic; font-display:swap; }
+
+/* Space Mono — labels, SKUs, prices */
+@font-face { font-family:'Space Mono'; src:url('../assets/fonts/space-mono/space-mono-latin-400-normal.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+@font-face { font-family:'Space Mono'; src:url('../assets/fonts/space-mono/space-mono-latin-400-italic.woff2') format('woff2'); font-weight:400; font-style:italic; font-display:swap; }
+@font-face { font-family:'Space Mono'; src:url('../assets/fonts/space-mono/space-mono-latin-700-normal.woff2') format('woff2'); font-weight:700; font-style:normal; font-display:swap; }
+@font-face { font-family:'Space Mono'; src:url('../assets/fonts/space-mono/space-mono-latin-700-italic.woff2') format('woff2'); font-weight:700; font-style:italic; font-display:swap; }
