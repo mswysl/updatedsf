@@ -1,0 +1,38 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Brand core" subtitle="The four-color MSWYSL palette — loud and final" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 16px; background: var(--paper); }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .sw { border: var(--border-w-2) solid var(--black); border-radius: var(--radius-sm); overflow: hidden; }
+  .chip { height: 76px; display: flex; align-items: flex-end; padding: 8px; }
+  .meta { padding: 8px; background: var(--white); border-top: var(--border-w-2) solid var(--black); }
+  .name { font-family: var(--font-display); text-transform: uppercase; font-size: 13px; transform: var(--display-skew); }
+  .hex { font-family: var(--font-mono); font-size: 11px; color: var(--ink-500); letter-spacing: 0.04em; }
+  .tag { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="sw">
+      <div class="chip" style="background:var(--pink-500);"><span class="tag" style="color:#fff;">PRIMARY</span></div>
+      <div class="meta"><div class="name">Pink</div><div class="hex">#FF009A</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:var(--lime-500);"><span class="tag" style="color:#000;">HIGHLIGHT</span></div>
+      <div class="meta"><div class="name">Lime</div><div class="hex">#79FF04</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:var(--black);"><span class="tag" style="color:#fff;">INK</span></div>
+      <div class="meta"><div class="name">Black</div><div class="hex">#000000</div></div>
+    </div>
+    <div class="sw">
+      <div class="chip" style="background:var(--white); border-bottom:var(--border-w-2) solid var(--ink-200);"><span class="tag" style="color:#000;">PAPER</span></div>
+      <div class="meta"><div class="name">White</div><div class="hex">#FFFFFF</div></div>
+    </div>
+  </div>
+</body>
+</html>

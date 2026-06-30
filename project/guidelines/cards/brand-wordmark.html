@@ -1,0 +1,25 @@
+<!-- @dsCard group="Brand" viewport="700x220" name="Wordmark" subtitle="The MSWYSL logotype — pink on black, ink on paper" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 0; background: var(--paper); }
+  .split { display: grid; grid-template-columns: 1fr 1fr; height: 220px; }
+  .panel { display: flex; align-items: center; justify-content: center; padding: 28px; position: relative; }
+  .dark { background: var(--ink-950); }
+  .light { background: var(--white); border-left: var(--border-w-2) solid var(--black); }
+  .panel img { max-height: 130px; width: auto; max-width: 88%; }
+  .cap { position: absolute; bottom: 10px; left: 14px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; }
+  .dark .cap { color: var(--ink-400); }
+  .light .cap { color: var(--ink-400); }
+</style>
+</head>
+<body>
+  <div class="split">
+    <div class="panel dark"><img src="../../assets/wordmark-pink.png" alt="MSWYSL wordmark"><span class="cap">Pink on black</span></div>
+    <div class="panel light"><img src="../../assets/wordmark-black.png" alt="MSWYSL wordmark"><span class="cap">Ink on paper</span></div>
+  </div>
+</body>
+</html>

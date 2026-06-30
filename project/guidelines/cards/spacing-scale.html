@@ -1,0 +1,28 @@
+<!-- @dsCard group="Spacing" viewport="700x180" name="Spacing scale" subtitle="8px base grid with tight half-steps" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--paper); }
+  .stack { display: flex; flex-direction: column; gap: 7px; }
+  .row { display: flex; align-items: center; gap: 12px; }
+  .tag { font-family: var(--font-mono); font-size: 10px; color: var(--ink-500); width: 96px; flex: none; }
+  .bar { height: 14px; background: var(--pink-500); border: var(--border-w-1) solid var(--black); }
+</style>
+</head>
+<body>
+  <div class="stack">
+    <div class="row"><span class="tag">1 · 4px</span><div class="bar" style="width:4px;"></div></div>
+    <div class="row"><span class="tag">2 · 8px</span><div class="bar" style="width:8px;"></div></div>
+    <div class="row"><span class="tag">3 · 12px</span><div class="bar" style="width:12px;"></div></div>
+    <div class="row"><span class="tag">4 · 16px</span><div class="bar" style="width:16px;"></div></div>
+    <div class="row"><span class="tag">6 · 24px</span><div class="bar" style="width:24px;"></div></div>
+    <div class="row"><span class="tag">8 · 32px</span><div class="bar" style="width:32px;"></div></div>
+    <div class="row"><span class="tag">12 · 48px</span><div class="bar" style="width:48px;"></div></div>
+    <div class="row"><span class="tag">16 · 64px</span><div class="bar" style="width:64px;"></div></div>
+    <div class="row"><span class="tag">24 · 96px</span><div class="bar" style="width:96px;"></div></div>
+  </div>
+</body>
+</html>

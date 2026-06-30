@@ -1,0 +1,44 @@
+/* ============================================================
+   MSWYSL — Borders, shadows, motion
+   The brand's signature is the HARD offset shadow (no blur) and
+   the 2px black rule — think gig-poster / sticker / screen-print.
+   Soft shadows are reserved for floating UI (menus, dialogs, toasts).
+   ============================================================ */
+:root {
+  /* ---- Border widths ---- */
+  --border-w-1: 1px;
+  --border-w-2: 2px;   /* default brand rule */
+  --border-w-3: 3px;
+  --border-w-4: 4px;   /* loud / poster framing */
+
+  /* ---- Hard offset shadows (no blur) — the brand default ---- */
+  --shadow-hard-xs: 2px 2px 0 0 var(--black);
+  --shadow-hard-sm: 3px 3px 0 0 var(--black);
+  --shadow-hard:    5px 5px 0 0 var(--black);
+  --shadow-hard-lg: 8px 8px 0 0 var(--black);
+  /* Colored hard shadows for accents */
+  --shadow-pink:    5px 5px 0 0 var(--pink-500);
+  --shadow-lime:    5px 5px 0 0 var(--lime-500);
+
+  /* ---- Soft shadows — floating UI only ---- */
+  --shadow-pop:   0 8px 24px rgba(10,10,11,0.18);
+  --shadow-modal: 0 24px 64px rgba(10,10,11,0.40);
+
+  /* ---- Focus ---- */
+  --focus-ring-w: 3px; /* @kind other */
+  --focus-ring: 0 0 0 var(--focus-ring-w) var(--lime-500);
+  --focus-ring-offset: 0 0 0 2px var(--black), 0 0 0 5px var(--lime-500);
+
+  /* ---- Motion — snappy, no bounce. Death metal doesn't wobble. ---- */
+  --ease-out:  cubic-bezier(0.2, 0.8, 0.2, 1); /* @kind other */
+  --ease-in:   cubic-bezier(0.6, 0, 0.9, 0.2); /* @kind other */
+  --ease-std:  cubic-bezier(0.3, 0, 0.2, 1);   /* @kind other */
+  --dur-instant: 70ms;  /* @kind other */
+  --dur-fast:    120ms; /* @kind other */
+  --dur-base:    180ms; /* @kind other */
+  --dur-slow:    280ms; /* @kind other */
+
+  /* The hard-shadow "press": element translates into its shadow.
+     Pair --press-translate with shadow swap on :active. */
+  --press-translate: translate(3px, 3px); /* @kind other */
+}

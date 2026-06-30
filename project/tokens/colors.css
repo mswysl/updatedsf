@@ -1,0 +1,105 @@
+/* ============================================================
+   MSWYSL — Color tokens
+   Brand palette is intentionally tiny and loud:
+   hot pink, toxic lime, pure black, pure white.
+   Everything else is a neutral ink ramp for a usable storefront.
+   ============================================================ */
+:root {
+  /* ---- Brand core (from brand palette card) ---- */
+  --pink-500: #FF009A;   /* primary — the MSWYSL pink */
+  --lime-500: #79FF04;   /* secondary — toxic highlight / in-stock / sale */
+  --black:    #000000;
+  --white:    #FFFFFF;
+
+  /* ---- Pink ramp (derived from #FF009A) ---- */
+  --pink-700: #99005C;   /* pressed / deep */
+  --pink-600: #D6007F;   /* hover */
+  --pink-400: #FF4DB8;   /* tint */
+  --pink-200: #FFB3DF;   /* soft tint */
+  --pink-050: #FFE6F4;   /* wash bg */
+
+  /* ---- Lime ramp (derived from #79FF04) ---- */
+  --lime-700: #3F8A00;
+  --lime-600: #5FCC03;   /* hover on lime */
+  --lime-400: #9CFF4D;
+  --lime-200: #CCFF99;
+  --lime-050: #EEFFDD;
+
+  /* ---- Ink / neutral ramp (cool, near-black) ---- */
+  --ink-950: #0A0A0B;    /* true page-black surface */
+  --ink-900: #141416;
+  --ink-800: #1F1F23;
+  --ink-700: #34343A;
+  --ink-600: #4D4D55;
+  --ink-500: #6E6E78;
+  --ink-400: #9A9AA3;
+  --ink-300: #C2C2C9;
+  --ink-200: #E2E2E6;
+  --ink-100: #EFEFF1;
+  --ink-050: #F7F7F8;
+  --paper:   #FBFBF9;    /* faintly warm off-white page */
+
+  /* ---- System danger (extension — flagged in readme) ---- */
+  --blood-500: #E10600;  /* destructive / sold-out stamp */
+  --blood-600: #B30400;
+
+  /* ============================================================
+     SEMANTIC ALIASES — use these in components, not raw ramps
+     ============================================================ */
+  /* Surfaces & text (light (default) context) */
+  --bg:            var(--paper);
+  --bg-inverse:    var(--ink-950);
+  --surface:       var(--white);
+  --surface-2:     var(--ink-050);
+  --surface-sunken:var(--ink-100);
+
+  --text:          var(--ink-950);
+  --text-muted:    var(--ink-500);
+  --text-faint:    var(--ink-400);
+  --text-inverse:  var(--white);
+  --text-on-accent:var(--white);   /* on pink */
+  --text-on-lime:  var(--black);   /* on lime */
+
+  /* Lines */
+  --border:        var(--ink-200);
+  --border-strong: var(--black);     /* the brutalist 2px black rule */
+  --border-accent: var(--pink-500);
+
+  /* Roles */
+  --accent:        var(--pink-500);
+  --accent-hover:  var(--pink-600);
+  --accent-press:  var(--pink-700);
+  --accent-2:      var(--lime-500);
+  --accent-2-hover:var(--lime-600);
+
+  --success:       var(--lime-500);
+  --success-text:  var(--lime-700);
+  --danger:        var(--blood-500);
+  --danger-hover:  var(--blood-600);
+  --focus-ring:    var(--lime-500);
+
+  /* Misc */
+  --overlay:       rgba(10,10,11,0.72);
+  --selection-bg:  var(--pink-500);
+  --selection-fg:  var(--white);
+}
+
+/* ============================================================
+   DARK CONTEXT — opt in by adding .on-dark (or [data-theme=dark])
+   to a section. Death-metal merch lives on black a lot.
+   ============================================================ */
+.on-dark,
+[data-theme="dark"] {
+  --bg:            var(--ink-950);
+  --surface:       var(--ink-900);
+  --surface-2:     var(--ink-800);
+  --surface-sunken:var(--black);
+
+  --text:          var(--white);
+  --text-muted:    var(--ink-400);
+  --text-faint:    var(--ink-600);
+
+  --border:        var(--ink-700);
+  --border-strong: var(--white);
+  --border-accent: var(--pink-500);
+}

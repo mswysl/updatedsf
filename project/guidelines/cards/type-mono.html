@@ -1,0 +1,28 @@
+<!-- @dsCard group="Type" viewport="700x170" name="Mono — labels, SKUs & price" subtitle="Space Mono · uppercase eyebrows, codes, receipt energy" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--paper); display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-500); }
+  .sku { font-family: var(--font-mono); font-size: 12px; color: var(--ink-950); background: var(--ink-100); border: var(--border-w-1) solid var(--ink-300); padding: 3px 7px; }
+  .price { font-family: var(--font-mono); font-weight: 700; font-size: 28px; color: var(--ink-950); }
+  .strike { font-family: var(--font-mono); font-size: 16px; color: var(--ink-400); text-decoration: line-through; }
+  .save { font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--black); background: var(--lime-500); padding: 2px 6px; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <span class="eyebrow">NEW · LIMITED · SOLD OUT</span>
+    <span class="sku">SKU-MSWYSL-0042</span>
+  </div>
+  <div class="row">
+    <span class="price">$38.00</span>
+    <span class="strike">$52.00</span>
+    <span class="save">SAVE 27%</span>
+  </div>
+</body>
+</html>

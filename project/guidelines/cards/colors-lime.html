@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" viewport="700x110" name="Lime ramp" subtitle="Toxic lime — sale tags, in-stock, energy & focus rings" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 16px; background: var(--paper); }
+  .ramp { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+  .cell { border: var(--border-w-2) solid var(--black); border-radius: var(--radius-sm); height: 78px; display: flex; flex-direction: column; justify-content: flex-end; padding: 6px; }
+  .n { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.04em; }
+  .h { font-family: var(--font-mono); font-size: 9px; opacity: 0.85; }
+</style>
+</head>
+<body>
+  <div class="ramp">
+    <div class="cell" style="background:var(--lime-700);color:#fff;"><span class="n">700</span><span class="h">#3F8A00</span></div>
+    <div class="cell" style="background:var(--lime-600);color:#000;"><span class="n">600</span><span class="h">#5FCC03</span></div>
+    <div class="cell" style="background:var(--lime-500);color:#000;"><span class="n">500</span><span class="h">#79FF04</span></div>
+    <div class="cell" style="background:var(--lime-400);color:#000;"><span class="n">400</span><span class="h">#9CFF4D</span></div>
+    <div class="cell" style="background:var(--lime-200);color:#000;"><span class="n">200</span><span class="h">#CCFF99</span></div>
+    <div class="cell" style="background:var(--lime-050);color:#000;"><span class="n">050</span><span class="h">#EEFFDD</span></div>
+  </div>
+</body>
+</html>

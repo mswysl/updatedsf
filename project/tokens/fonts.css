@@ -1,0 +1,15 @@
+/* ============================================================
+   MSWYSL — Webfonts
+   Display face: Incised 901 Nord Italic (the real brand logotype
+   font, licensed file shipped in assets/fonts/). Body = Archivo,
+   labels/SKUs = Space Mono (Google Fonts).
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: 'Incised 901 Nord';
+  src: url('../assets/fonts/Incised901NordItalic.ttf') format('truetype');
+  font-weight: 400 900;
+  font-style: italic;
+  font-display: swap;
+}

@@ -1,0 +1,60 @@
+<!-- @dsCard group="Components" viewport="700x560" name="Commerce — ProductCard, Price, SkullRating" subtitle="The catalog tile and its parts" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 22px; background: var(--paper); }
+  .lbl { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-400); margin: 0 0 10px; }
+  .group { margin-bottom: 22px; }
+  .row { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 660px; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="../../_ds_bundle.js"></script>
+  <script type="text/babel">
+    const { ProductCard, Price, SkullRating } = window.MSWYSLDesignSystem_d8bb48;
+    function Demo() {
+      return (
+        <div>
+          <div className="group">
+            <p className="lbl">Price</p>
+            <div className="row">
+              <Price amount={38} size="lg" />
+              <Price amount={38} compareAt={52} size="md" />
+              <Price amount={120} compareAt={150} size="sm" />
+            </div>
+          </div>
+          <div className="group">
+            <p className="lbl">SkullRating</p>
+            <div className="row">
+              <SkullRating value={5} count={420} />
+              <SkullRating value={4} showValue />
+              <SkullRating value={3} size={22} />
+            </div>
+          </div>
+          <div className="group" style={{marginBottom:0}}>
+            <p className="lbl">ProductCard</p>
+            <div className="cards">
+              <ProductCard image="../../assets/merch/tee-black-pink.jpg" artist="Cadaverous Bloom"
+                title="Exhumed Rites Long Sleeve" price={38} compareAt={52}
+                badges={[{label:'Limited · 100', variant:'limited'}]} rating={4.5} reviews={128} />
+              <ProductCard image="../../assets/merch/hood-ink-lime.jpg" artist="Sunn Abyss"
+                title="Toxic Doom Hoodie" price={64} badges={[{label:'New', variant:'new'}]} rating={5} reviews={37} />
+              <ProductCard image="../../assets/merch/vinyl-ink-white.jpg" artist="Goregrind Split"
+                title='Necrotic Split 7&quot; Vinyl' price={18} soldOut rating={4} reviews={88} />
+            </div>
+          </div>
+        </div>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!-- @dsCard group="Spacing" viewport="700x200" name="Shadows & borders" subtitle="Signature hard offset shadow + 2px black rule" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--paper); }
+  .row { display: flex; gap: 28px; align-items: flex-start; }
+  .item { text-align: center; }
+  .box { width: 120px; height: 76px; background: var(--white); border: var(--border-w-2) solid var(--black); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 11px; }
+  .lab { margin-top: 14px; font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-600); }
+  .s-hard { box-shadow: var(--shadow-hard); }
+  .s-pink { box-shadow: var(--shadow-pink); }
+  .s-lime { box-shadow: var(--shadow-lime); }
+  .s-pop  { box-shadow: var(--shadow-pop); border-color: var(--ink-200); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box s-hard">HARD</div><div class="lab">--shadow-hard</div></div>
+    <div class="item"><div class="box s-pink">PINK</div><div class="lab">--shadow-pink</div></div>
+    <div class="item"><div class="box s-lime">LIME</div><div class="lab">--shadow-lime</div></div>
+    <div class="item"><div class="box s-pop">POP</div><div class="lab">--shadow-pop · menus</div></div>
+  </div>
+</body>
+</html>

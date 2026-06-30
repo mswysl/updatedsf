@@ -1,0 +1,25 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Radii — hard by default" subtitle="The brand is square. Max rounding on UI is 4px." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--paper); }
+  .row { display: flex; gap: 18px; align-items: flex-end; }
+  .item { text-align: center; }
+  .box { width: 84px; height: 64px; background: var(--ink-950); border: var(--border-w-2) solid var(--black); }
+  .lab { margin-top: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--ink-600); }
+  .lab b { display: block; color: var(--ink-950); font-size: 12px; }
+  .pill { border-radius: var(--radius-pill); width: 84px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="item"><div class="box" style="border-radius:0;"></div><div class="lab"><b>0px</b>default</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-sm);"></div><div class="lab"><b>2px</b>--radius-sm</div></div>
+    <div class="item"><div class="box" style="border-radius:var(--radius-md);"></div><div class="lab"><b>4px</b>--radius-md</div></div>
+    <div class="item"><div class="box pill" style="height:40px;"></div><div class="lab"><b>pill</b>chips only</div></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* ============================================================
+   MSWYSL — Base element defaults & primitives
+   Light resets + brand defaults so bare HTML already looks on-brand.
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  font-weight: var(--weight-regular);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--selection-bg); color: var(--selection-fg); }
+
+/* Display headings: heavy, uppercase, skewed oblique = the brand voice */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-black);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+  margin: 0 0 var(--space-4);
+}
+h1 { font-size: var(--type-h1-size); }
+h2 { font-size: var(--type-h2-size); }
+h3 { font-size: var(--type-h3-size); }
+h4, h5, h6 {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+  margin: 0 0 var(--space-3);
+}
+h4 { font-size: var(--type-h4-size); }
+
+p { margin: 0 0 var(--space-4); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+
+strong, b { font-weight: var(--weight-bold); }
+
+/* Mono utility for labels / SKUs / receipts */
+code, kbd, samp { font-family: var(--font-mono); font-size: 0.92em; }
+
+/* Keyboard focus — toxic lime ring, always visible */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring-offset);
+}
+
+img, svg { display: block; max-width: 100%; }
+
+hr {
+  border: none;
+  border-top: var(--border-w-2) solid var(--border-strong);
+  margin: var(--space-6) 0;
+}
+
+/* ---- A couple of brand text helpers ---- */
+.mswysl-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.mswysl-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  transform: var(--display-skew);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

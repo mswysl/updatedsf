@@ -1,0 +1,29 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Semantic roles" subtitle="Tokens components actually use — accent, success, danger, surfaces" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 16px; background: var(--paper); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .item { border: var(--border-w-2) solid var(--black); border-radius: var(--radius-sm); }
+  .bar { height: 44px; }
+  .lab { padding: 6px 8px; background: var(--white); border-top: var(--border-w-2) solid var(--black); }
+  .role { font-family: var(--font-mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+  .tok { font-family: var(--font-mono); font-size: 9.5px; color: var(--ink-500); }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item"><div class="bar" style="background:var(--accent);"></div><div class="lab"><div class="role">Accent</div><div class="tok">--accent</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--accent-hover);"></div><div class="lab"><div class="role">Accent hover</div><div class="tok">--accent-hover</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--success);"></div><div class="lab"><div class="role">Success</div><div class="tok">--success</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--danger);"></div><div class="lab"><div class="role">Danger</div><div class="tok">--danger</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--surface);border-bottom:var(--border-w-1) solid var(--ink-200);"></div><div class="lab"><div class="role">Surface</div><div class="tok">--surface</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--surface-2);"></div><div class="lab"><div class="role">Surface 2</div><div class="tok">--surface-2</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--text);"></div><div class="lab"><div class="role">Text</div><div class="tok">--text</div></div></div>
+    <div class="item"><div class="bar" style="background:var(--focus-ring);"></div><div class="lab"><div class="role">Focus ring</div><div class="tok">--focus-ring</div></div></div>
+  </div>
+</body>
+</html>

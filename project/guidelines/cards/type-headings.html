@@ -1,0 +1,24 @@
+<!-- @dsCard group="Type" viewport="700x250" name="Heading scale" subtitle="H1–H4 — display heads carry the weight, body for sub-heads" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 20px; background: var(--paper); }
+  .stack { display: flex; flex-direction: column; gap: 10px; }
+  .line { display: flex; align-items: baseline; gap: 16px; }
+  .tag { font-family: var(--font-mono); font-size: 10px; color: var(--ink-400); width: 70px; flex: none; letter-spacing: 0.04em; }
+  h1,h2,h3 { margin: 0; transform: var(--display-skew); }
+  h4 { margin: 0; }
+</style>
+</head>
+<body>
+  <div class="stack">
+    <div class="line"><span class="tag">H1 · 48</span><h1>Cavernous Doom</h1></div>
+    <div class="line"><span class="tag">H2 · 36</span><h2>Tour Merch Drop</h2></div>
+    <div class="line"><span class="tag">H3 · 28</span><h3>Limited To 100</h3></div>
+    <div class="line"><span class="tag">H4 · 22</span><h4>Long sleeve, heavyweight cotton</h4></div>
+  </div>
+</body>
+</html>

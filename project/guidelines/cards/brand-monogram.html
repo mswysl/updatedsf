@@ -1,0 +1,30 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Monogram" subtitle="The spiked MW mark — app icon, favicon, stamp, tag" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body { margin: 0; padding: 0; background: var(--paper); }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); height: 180px; }
+  .cell { display: flex; align-items: center; justify-content: center; position: relative; }
+  .cell img { width: 92px; height: 92px; object-fit: contain; }
+  .c1 { background: var(--ink-950); }
+  .c2 { background: var(--white); border-left: var(--border-w-2) solid var(--black); }
+  .c3 { background: var(--pink-500); border-left: var(--border-w-2) solid var(--black); }
+  .c4 { background: var(--ink-950); border-left: var(--border-w-2) solid var(--black); }
+  .cap { position: absolute; bottom: 8px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .c1 .cap, .c4 .cap { color: var(--ink-400); }
+  .c2 .cap { color: var(--ink-400); }
+  .c3 .cap { color: var(--white); }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="cell c1"><img src="../../assets/monogram-pink.png" alt="mark"><span class="cap">Pink / black</span></div>
+    <div class="cell c2"><img src="../../assets/monogram-black.png" alt="mark"><span class="cap">Ink / paper</span></div>
+    <div class="cell c3"><img src="../../assets/monogram-white.png" alt="mark"><span class="cap">Knockout</span></div>
+    <div class="cell c4"><img src="../../assets/monogram-lime.png" alt="mark"><span class="cap">Lime accent</span></div>
+  </div>
+</body>
+</html>

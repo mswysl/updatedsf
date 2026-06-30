@@ -1,0 +1,53 @@
+/* ============================================================
+   MSWYSL — Spacing, sizing & layout tokens
+   8px base grid with a couple of tight half-steps.
+   ============================================================ */
+:root {
+  /* ---- Spacing scale ---- */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* ---- Radii — brand is HARD-cornered. Default to square. ---- */
+  --radius-0:   0px;       /* default — poster / brutalist */
+  --radius-sm:  2px;       /* the most rounding the brand allows on UI */
+  --radius-md:  4px;       /* inputs / cards, max */
+  --radius-pill:999px;     /* only for round chips / avatars */
+  --radius-card: var(--radius-0);
+  --radius-control: var(--radius-sm);
+
+  /* ---- Container / layout ---- */
+  --container-sm:  640px;
+  --container-md:  960px;
+  --container-lg:  1200px;
+  --container-xl:  1440px;
+  --gutter:        var(--space-6);
+  --section-y:     var(--space-24);
+
+  /* ---- Control sizing ---- */
+  --control-h-sm: 36px;
+  --control-h-md: 44px;   /* default — meets 44px touch target */
+  --control-h-lg: 56px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+
+  /* ---- Z-index ---- */
+  --z-base: 0;      /* @kind other */
+  --z-sticky: 100;  /* @kind other */
+  --z-header: 200;  /* @kind other */
+  --z-overlay: 900; /* @kind other */
+  --z-modal: 1000;  /* @kind other */
+  --z-toast: 1100;  /* @kind other */
+}

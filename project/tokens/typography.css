@@ -1,0 +1,83 @@
+/* ============================================================
+   MSWYSL — Typography tokens
+   Display: Archivo Black (SUBSTITUTE for Incised 901 Nord Italic),
+            used UPPERCASE + skewed oblique for the merch-poster voice.
+   Body/UI: Archivo.
+   Labels/SKUs/prices: Space Mono — utilitarian, punk receipt energy.
+   ============================================================ */
+:root {
+  /* ---- Families ---- */
+  --font-display: 'Incised 901 Nord', 'Arial Black', system-ui, sans-serif;
+  --font-body:    'Archivo', system-ui, -apple-system, sans-serif;
+  --font-mono:    'Space Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* The real Incised 901 Nord file is already italic/oblique — no skew needed. */
+  --display-skew: none; /* @kind other */
+
+  /* ---- Weights ---- */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-semibold:600;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  /* ---- Type scale (px) ---- */
+  --text-2xs:  11px;
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   18px;
+  --text-xl:   22px;
+  --text-2xl:  28px;
+  --text-3xl:  36px;
+  --text-4xl:  48px;
+  --text-5xl:  64px;
+  --text-6xl:  88px;
+  --text-7xl:  120px;  /* poster / hero scream */
+
+  /* ---- Line heights ---- */
+  --leading-none:   1;
+  --leading-tight:  1.05;
+  --leading-snug:   1.18;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.65;
+
+  /* ---- Letter spacing ---- */
+  --tracking-tighter: -0.03em;
+  --tracking-tight:   -0.015em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.1em;   /* mono eyebrow labels, UPPERCASE */
+  --tracking-widest:  0.18em;
+
+  /* ============================================================
+     SEMANTIC TYPE ROLES
+     ============================================================ */
+  --type-hero-family:    var(--font-display);
+  --type-hero-size:      var(--text-7xl);
+  --type-hero-tracking:  var(--tracking-tight);
+  --type-hero-leading:   var(--leading-none);
+
+  --type-display-family: var(--font-display);
+  --type-display-size:   var(--text-5xl);
+
+  --type-h1-size: var(--text-4xl);
+  --type-h2-size: var(--text-3xl);
+  --type-h3-size: var(--text-2xl);
+  --type-h4-size: var(--text-xl);
+
+  --type-body-family:  var(--font-body);
+  --type-body-size:    var(--text-base);
+  --type-body-leading: var(--leading-normal);
+
+  --type-small-size:  var(--text-sm);
+
+  /* Eyebrow / label / SKU: mono, uppercase, tracked out */
+  --type-label-family:   var(--font-mono);
+  --type-label-size:     var(--text-xs);
+  --type-label-tracking: var(--tracking-wider);
+
+  /* Price: mono, bold */
+  --type-price-family: var(--font-mono);
+  --type-price-weight: var(--weight-bold);
+}
